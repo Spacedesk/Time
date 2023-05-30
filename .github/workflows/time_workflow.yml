@@ -1,1 +1,19 @@
+name: Workflow Using Get Time Action
+
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name
+  pull_request:
+    branches:
+      - main  # Replace with your branch name
+
+jobs:
+  time_job:
+    name: Get Time
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Get Time Action
+        uses: ./.github/actions/get-time
  
