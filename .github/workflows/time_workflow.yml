@@ -1,8 +1,12 @@
 name: Time Workflow
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Runs every hour
+  push:
+    branches:
+      - main  # Replace with your branch name
+  pull_request:
+    branches:
+      - main  # Replace with your branch name
 
 jobs:
   time_job:
@@ -16,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'  # Replace with the desired Python version
+          python-version: '3.9'  # Replace with the desired Python version
 
       - name: Install Dependencies
         run: pip install pytz
