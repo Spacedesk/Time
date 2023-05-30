@@ -1,4 +1,4 @@
-name: Workflow Using Get Time Action
+name: Time Action Workflow
 
 on:
   push:
@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: Use Get Time Action
         uses: ./.github/actions/get-time
- 
+
