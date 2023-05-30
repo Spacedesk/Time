@@ -14,5 +14,5 @@ new_york_time = datetime.datetime.now(new_york_timezone)
 new_york_time_str = new_york_time.strftime('%Y-%m-%d %H:%M:%S')
 
 # Print the results
-print('Current time in  London:', london_time_str)
+print('Current time in London:', london_time_str)
 print('Current  time in New York:', new_york_time_str)
