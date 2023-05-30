@@ -1,0 +1,15 @@
+name: Get Time Action
+description: Retrieves the current time in London and New York
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Python
+      shell: bash
+      run: |
+        pip install --upgrade pip
+        pip install pytz
+
+    - name: Get Time
+      shell: bash
+      run: |
+        python time_script.py
